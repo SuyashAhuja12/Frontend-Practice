@@ -1,0 +1,24 @@
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+# In-memory data structure to store messages
+messages = []
+
+@app.route('/send_message', methods=['POST'])
+def send_message():
+    data = request.get_json()
+    if 'user' in data and 'message' in data:
+        user = data['user']
+        message = data['message']
+        messages.append({'user': user, 'message': message})
+        return jsonify({'status': 'Message sent successfully'})
+    else:
+        return jsonify({'error': 'Invalid request'})
+
+@app.route('/get_messages', methods=['GET'])
+def get_messages():
+    return jsonify(messages)
+
+if __name__ == '__main__':
+    app.run(debug=True)

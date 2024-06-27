@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bounce bounce </title>
+    <style>
+         .box{
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-radius: 50px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: animateY ease-out infinite alternate;
+        }
+            @keyframes animateX{
+            from{
+                left:0;
+            }
+            to{
+                left:100;
+            }
+        }
+        @keyframes animateY{
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 100;
+            }
+        }
+        
+        .container{
+            position: relative;
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="box"></div>
+   </div>
+</body>
+</html>

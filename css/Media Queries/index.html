@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        @media only screen and (max-width:455px){
+            body{
+                background-color: blue;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        .box{
+            border: 2px;
+            height: 340px;
+            width: 340px;
+            padding: 5px;
+            margin: 5px;
+            background-color: aqua;
+        }
+        .boxes{
+            display: flex;
+        }
+      
+    </style>
+</head>
+<body>
+    <div>
+        i am speed!!!
+    </div> 
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

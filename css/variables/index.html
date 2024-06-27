@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+</head>
+<style>
+    :root{
+        --color:red;
+        --seccolor:rgb(231, 129, 129);
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .nav{
+        background-color:var(--color);
+    }
+    .box{
+        background-color:var(--seccolor) ;
+    }
+    ul li{
+        list-style: none;
+        padding: 25px;
+        margin: 0;
+        border: 5px solid black;
+
+    }
+    ul{
+        display: flex;
+    }
+    ul li:first-child{
+        --color:rgb(118, 232, 136);
+        background-color:var(--color) ;
+        
+    }
+
+</style>
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>setings</li>
+        </ul>
+    </div>
+    <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores autem, corrupti aliquid ex recusandae perspiciatis? Dolorum, magni aliquid. Perferendis incidunt id totam facilis quidem sapiente dolore dolor aliquam earum veritatis.</div>
+</body>
+</html>

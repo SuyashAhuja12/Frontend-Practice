@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            flex-direction: column;
+        }
+        .item{
+            height:50px;
+            width: 50px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color: bisque;
+           
+        }
+        div :nth-child(2){
+            background-color: rgb(121, 73, 192);
+        }
+        div :nth-child(1){
+            background-color: blueviolet;
+        }
+        div :nth-child(3){
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
+</body>
+</html>
